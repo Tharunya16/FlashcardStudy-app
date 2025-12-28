@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dashboard Page</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body class="dashboard-page">
+
+<nav class="navbar">
+  <div class="nav-inner">
+
+    <div class="nav-left">
+      <h2 class="brand">
+        <img src="../assets/images/card.png" alt="icon">
+        Flashcard Study App
+      </h2>
+      <p>Learn smart. Revise faster.</p>
+    </div>
+
+    <div class="nav-right">
+      <button class="logout-btn" onclick="logout()">Logout</button>
+    </div>
+
+  </div>
+</nav>
+<button id="createCardBtn">Create Your Own Card</button>
+
+<div id="createCardModal" class="modal" style="display:none;">
+  <div class="modal-content">
+    <span id="closeModal" style="cursor:pointer;">&times;</span>
+    <h3>Create New Flashcard</h3>
+    
+    <label for="subjectInput">Subject:</label>
+    <input type="text" id="subjectInput" placeholder="Enter subject or topic">
+
+    <label for="questionInput">Question:</label>
+    <input type="text" id="questionInput" placeholder="Enter question">
+
+    <label for="answerInput">Answer:</label>
+    <input type="text" id="answerInput" placeholder="Enter answer">
+
+    <button id="saveCardBtn">Save Card</button>
+  </div>
+</div>
+
+  <script src="../script.js"></script>
+</body>
+</html>

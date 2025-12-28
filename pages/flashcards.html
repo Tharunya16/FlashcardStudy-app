@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Flashcards</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-inner">
+      <div class="nav-left">
+        <h2 class="brand">
+          <img src="../assets/images/card.png" alt="icon">
+          Flashcard Study App
+        </h2>
+      </div>
+      <div class="nav-right">
+        <button class="logout-btn" onclick="logout()">Logout</button>
+      </div>
+    </div>
+  </nav>
+  <div class="welcome">
+    <h1 id="subject-title">Flashcards</h1>
+  </div>
+  <div class="flashcard-container">
+    <div id="flashcard" class="flashcard-big"></div>
+
+    <div class="btn-wrapper">
+      <button class="back-btn" onclick="backCard()">Back</button>
+      <button class="next-btn" onclick="nextCard()">Next</button>
+    </div>
+  </div>
+
+  <script src="../script.js"></script>
+</body>
+</html>

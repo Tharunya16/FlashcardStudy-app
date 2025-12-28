@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Select Subject | Flashcards</title>
+  <link rel="stylesheet" href="../style.css"> 
+</head>
+<body>
+  <nav class="navbar">
+  <div class="nav-inner">
+
+    <div class="nav-left">
+      <h2 class="brand">
+        <img src="../assets/images/card.png" alt="icon">
+        Flashcard Study App
+      </h2>
+      <p>Learn smart. Revise faster.</p>
+    </div>
+
+    <div class="nav-right">
+      <button class="logout-btn" onclick="logout()">Logout</button>
+    </div>
+
+  </div>
+</nav>
+
+  <h1>Choose a Subject</h1>
+
+  <div class="subjects-container">
+    <div class="subject-card HTML" onclick="goToFlashcards('HTML')">
+      <img src="../assets/images/html.png" alt="HTML Icon">
+      <h2>HTML</h2>
+      <p>Learn website structure and basics</p>
+    </div>
+
+    <div class="subject-card CSS" onclick="goToFlashcards('CSS')">
+      <img src="../assets/images/css.png" alt="CSS Icon">
+      <h2>CSS</h2>
+      <p>Style your web pages beautifully</p>
+    </div>
+
+    <div class="subject-card JavaScript" onclick="goToFlashcards('JavaScript')">
+      <img src="../assets/images/javascript.png" alt="JS Icon">
+      <h2>JavaScript</h2>
+      <p>Add interactivity to web pages</p>
+    </div>
+
+    <div class="subject-card Java" onclick="goToFlashcards('Java')">
+      <img src="../assets/images/java.png" alt="Java Icon">
+      <h2>Java</h2>
+      <p>Learn object-oriented programming</p>
+    </div>
+
+    <div class="subject-card Python" onclick="goToFlashcards('Python')">
+      <img src="../assets/images/python.png" alt="Python Icon">
+      <h2>Python</h2>
+      <p>Learn high-level programming</p>
+    </div>
+  </div>
+  
+  <div class="subject-card create-own" onclick="goToCreateYourOwn()">
+    <img src="../assets/images/copy-writing.png" alt="Add Icon">
+    <h2>+ Create Your Own</h2>
+    <p>Make your own flashcard </p>
+  <script src="../script.js"></script>
+</body>
+</html>

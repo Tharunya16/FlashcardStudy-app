@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Quiz</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<nav class="navbar">
+  <div class="nav-inner">
+
+    <div class="nav-left">
+      <h2 class="brand">
+        <img src="../assets/images/card.png" alt="icon">
+        Flashcard Study App
+      </h2>
+      <p>Learn smart. Revise faster.</p>
+    </div>
+
+    <div class="nav-right">
+      <button class="logout-btn" onclick="logout()">Logout</button>
+    </div>
+
+  </div>
+</nav>
+<h2 class="quiz-title">Quiz Time 🧠</h2>
+<div class="quiz-card" id="quizCard">
+
+  <p id="questionText">Loading question...</p>
+
+  <form id="options"></form>
+  <button id="submitBtn" class="next-btn">Submit</button>
+  <button id="nextBtn" class="next-btn" style="display:none;">Next</button>
+
+</div>
+<script src="../script.js"></script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dashboard Page</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body class="dashboard-page">
+
+<nav class="navbar">
+  <div class="nav-inner">
+
+    <div class="nav-left">
+      <h2 class="brand">
+        <img src="../assets/images/card.png" alt="icon">
+        Flashcard Study App
+      </h2>
+      <p>Learn smart. Revise faster.</p>
+    </div>
+
+    <div class="nav-right">
+      <button class="logout-btn" onclick="logout()">Logout</button>
+    </div>
+
+  </div>
+</nav>
+<div class="welcome">
+  <h1>Welcome!! 👋</h1>
+  <p>Choose how you want to continue your learning today</p>
+</div>
+<div class="dashboard-container">
+  <div class="dashboard-left">
+    <img src="../assets/images/cards.png" alt="Study Image">
+  </div>
+  <div class="dashboard-right">
+    <div class="dashboard-card" onclick="goFlashcardSubjects()">
+      Flashcards
+      <p>Revise concepts quickly</p>
+    </div>
+    <div class="dashboard-card quiz" onclick="goQuiz()">Quiz<p>Test your understanding</p>
+    </div>
+  </div>
+
+</div>
+
+<script src="../script.js"></script>
+</body>
+</html>
