@@ -1,5 +1,4 @@
 document.addEventListener("DOMContentLoaded", () => {
-
   const quizData = [
     {
       question: "What does HTML stand for?",

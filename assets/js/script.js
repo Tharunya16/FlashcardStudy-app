@@ -39,7 +39,6 @@ function login() {
   alert("Wrong email or password");
 }
 
-// Navigation code
 function goFlashcardSubjects() {
   window.location.href = "flashcard-subjects.html";
 }
@@ -56,7 +55,6 @@ function goQuiz() {
   window.location.href = "quiz.html";
 }
 
-//  Logout code
 function logout() {
   localStorage.removeItem("currentUser");
   alert("Logged out!");

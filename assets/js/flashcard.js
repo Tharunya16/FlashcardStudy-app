@@ -1,6 +1,5 @@
 const params = new URLSearchParams(window.location.search);
 const subject = params.get("subject") || "HTML";
-
 const flashcardsData = {
   HTML: [
     { question: "What does HTML stand for?", answer: "HyperText Markup Language" },
