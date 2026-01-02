@@ -3,17 +3,41 @@ const subject = params.get("subject") || "HTML";
 const flashcardsData = {
   HTML: [
     { question: "What does HTML stand for?", answer: "HyperText Markup Language" },
-    { question: "Tag used for links?", answer: "<a>anchor tag" }
+    { question: "What is the purpose of HTML?", answer: "To structure content on the web" },
+    { question: "What is a hyperlink?", answer: "A link to another page or resource" },
+    { question: "What is semantic HTML?", answer: "HTML that conveys meaning, e.g., header, article" },
+    { question: "Why is HTML important?", answer: "It is the backbone of all web pages" }
   ],
   CSS: [
     { question: "What does CSS stand for?", answer: "Cascading Style Sheets" },
-    { question: "Property for text color?", answer: "color" }
+    { question: "What is the purpose of CSS?", answer: "To style and layout HTML elements" },
+    { question: "Difference between inline, internal, and external CSS?", answer: "Different ways to apply styles to HTML" },
+    { question: "What is the difference between relative and absolute positioning?", answer: "Relative moves element relative to normal position; absolute positions it with respect to parent or page" },
+    { question: "What is the difference between 'id' and 'class' selectors?", answer: "'id' is unique per page; 'class' can be reused" }
   ],
   JavaScript: [
-    { question: "JS is interpreted or compiled?", answer: "Interpreted" },
-    { question: "Function syntax?", answer: "function myFunc() {}" }
+    { question: "What is JavaScript used for?", answer: "To add interactivity to web pages" },
+    { question: "Difference between var, let, and const?", answer: "'var' is function-scoped; 'let' and 'const' are block-scoped; 'const' cannot be reassigned" },
+    { question: "What is an event in JavaScript?", answer: "An action that occurs in the browser, like click or keypress" },
+    { question: "What is a function?", answer: "A block of code designed to perform a particular task" },
+    { question: "Difference between == and ===?", answer: "== compares values; === compares value and type" }
+  ],
+  Java: [
+    { question: "What is Java?", answer: "A high-level, object-oriented programming language" },
+    { question: "Why is Java platform-independent?", answer: "Because of the Java Virtual Machine (JVM)" },
+    { question: "What is a class in Java?", answer: "A blueprint for creating objects" },
+    { question: "What is an object in Java?", answer: "An instance of a class" },
+    { question: "What is inheritance?", answer: "A mechanism where one class acquires the properties of another class" }
+  ],
+  Python: [
+    { question: "What is Python?", answer: "A high-level, interpreted programming language" },
+    { question: "What are Python’s key features?", answer: "Simple syntax, dynamically typed, interpreted, and versatile" },
+    { question: "What is a list in Python?", answer: "An ordered collection of items" },
+    { question: "What is a function in Python?", answer: "A block of reusable code to perform a task" },
+    { question: "What is a module in Python?", answer: "A file containing Python definitions and functions to be used in other programs" }
   ]
 };
+
 
 let currentIndex = 0;
 const cards = flashcardsData[subject] || [];
